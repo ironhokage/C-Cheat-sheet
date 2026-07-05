@@ -72,7 +72,7 @@ This is used when we have a variable, lets say float PI = 3.1415f and we want to
 
 Example:
 
-![](/home/ababeitudoralexandru/Desktop/Screenshot_20260705_134716.png)
+<img width="407" height="165" alt="Image" src="https://github.com/user-attachments/assets/db75c76f-1934-43ec-95bd-cdf7f00ae538" />
 
 2. <ins> Null Pointers </ins>
 	- A pointer that doesn't point to any valid memory address
