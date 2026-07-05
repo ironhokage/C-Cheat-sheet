@@ -80,7 +80,7 @@ Example:
 
 Example:
 
-![](/home/ababeitudoralexandru/Desktop/Screenshot_20260705_134847.png)
+<img width="280" height="124" alt="Image" src="https://github.com/user-attachments/assets/e326e273-3a0a-494f-8597-0985abeb484e" />
 
 3. <ins> Void Pointers </ins>
 	- It doesn't have a valid memory address from the start.
@@ -89,7 +89,7 @@ Example:
 
 Example:
 
-![](/home/ababeitudoralexandru/Desktop/Screenshot_20260705_135308.png)
+<img width="670" height="237" alt="Image" src="https://github.com/user-attachments/assets/399aad12-5f47-43ab-95f7-90bf6c174e06" />
 
 4. <ins> Pointers to Pointers </ins>
 	- In C++ we can make pointers that point to other pointers, these can point to data or other pointers.
