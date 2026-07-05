@@ -96,9 +96,7 @@ Example:
 	- To make a pointer of pointers/ to point to another pointer we just use the (*) symbol.
 
 Example:
-char a = '*';
-char * b = &a;
-char ** c = &b;
 
+<img width="279" height="152" alt="Image" src="https://github.com/user-attachments/assets/4449dbd5-50b0-442d-93d3-4d30b3cfb4fd" />
 
 
