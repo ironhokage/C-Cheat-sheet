@@ -73,10 +73,6 @@ This is used when we have a variable, lets say float PI = 3.1415f and we want to
 Example:
 
 <img width="407" height="165" alt="Image" src="https://github.com/user-attachments/assets/db75c76f-1934-43ec-95bd-cdf7f00ae538" />
-<<<<<<< HEAD
-=======
-
->>>>>>> b683b7b (Smart Pointers Added)
 
 2. <ins> Null Pointers </ins>
 	- A pointer that doesn't point to any valid memory address
@@ -103,8 +99,6 @@ Example:
 Example:
 
 <img width="279" height="152" alt="Image" src="https://github.com/user-attachments/assets/4449dbd5-50b0-442d-93d3-4d30b3cfb4fd" />
-<<<<<<< HEAD
-=======
 
 5. <ins> Dangling Pointer </ins>
     - A pointer that points to a value that has been freed or deleted.
@@ -127,6 +121,5 @@ Example:
 
 	2. unique_ptr
 		* 
->>>>>>> b683b7b (Smart Pointers Added)
 
 
