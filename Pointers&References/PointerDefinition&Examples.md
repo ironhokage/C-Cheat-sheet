@@ -162,4 +162,4 @@ Example:
 1. https://www.geeksforgeeks.org/cpp/smart-pointers-cpp/
 2. https://cplusplus.com/doc/tutorial/pointers/
 3. https://www.geeksforgeeks.org/cpp/difference-between-constant-pointer-pointers-to-constant-and-constant-pointers-to-constants/
-4. 
+4.https://www.internalpointers.com/post/constant-pointers-vs-pointer-constants-c-and-c.html
