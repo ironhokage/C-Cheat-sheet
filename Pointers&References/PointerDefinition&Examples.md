@@ -149,7 +149,7 @@ Example:
 		- **Example:** Think of a `shared_ptr` as a **hotel room key** that keeps the room reserved. A `weak_ptr` is a **receptionist's note** that says _"Guest in Room 204"_. The note doesn't keep the room alive—if all keys are returned, housekeeping destroys the room. If you knock on the door (call `.lock()`), you either get a temporary key (valid `shared_ptr`) or find an empty room (`nullptr`)
 
 >[!IMPORTANT]
-	> auto_ptr was deprecated in C++11 and removed in C++17.
+> auto_ptr was deprecated in C++11 and removed in C++17.
 
 8. <ins>Constant pointer</ins>
 	- A pointer of this type has a fixed memory location.
