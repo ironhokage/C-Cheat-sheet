@@ -19,6 +19,6 @@ It isn't something to make you from someone that doesn't know anything about pro
 ## <u>Table of Contents</u>
 
 > [!IMPORTANT]
-> This is still in the early stages of progress, do NOT take this as the final table of contents, i will reorganize and redo this as the repo grows
+> This is still in the early stages of development, do NOT take this as the final table of contents, i will reorganize and redo this as the repo grows
 
 
