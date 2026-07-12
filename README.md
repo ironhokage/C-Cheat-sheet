@@ -12,7 +12,7 @@ When I first started this repo I just wanted to have it as a personal reference/
 - Very little to no examples that are connected to the world around us
 - To convoluted for the average newbie to sit down and read or to superficial so they don't really understand all that much
 
-## **<u>What i want to explore in this repo?</u>
+## <u>What i want to explore in this repo?</u>
 
 It isn't something to make you from someone that doesn't know anything about programming to a genius that revolutionizes the world of computing, I just want to make people curious enough to actually invest the time, nerves and resources in coding and software development in general.
 
