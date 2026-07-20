@@ -167,6 +167,34 @@ Example:
 	- **Analogy:** Think of a plastic box that has balls in it, the plastic box is an instance of a class and the balls are the member functions that are shared between the boxes, when using the `this`  pointer we can get properties (variables of the class or functions) of that plastic box and the balls inside it.
 
 
+# <u>Pointer Arithmetic</u>: 
+
+> [!IMPORTANT]
+> Only addition and subtraction operations are allowed and behave differently when used with pointers, according to the data type of which they point to.
+
+There are 3 types of operations we can do on pointers, these are:
+1. Incrementing/decrementing a pointer
+2. Adding/subtracting a pointer with a whole number value
+3. Subtracting two pointers
+
+### Incrementing/decrementing a pointer
+- On pointers, like on numerical value type variables, we can use `++ ` to increment or ` --` to decrement said values. They increase or decrease the value of the pointers address by using the value of the base type. 
+
+- **Example:** Lets say we have a pointer **p** of type `int` and we want to increase its value, then we will use `++ ` and the pointers address value will increase by `sizeof(int)` (because the base type of the pointer is an int and an int has 4 bytes)
+
+### Adding/subtracting a pointer with a whole number value
+- When we want to add or subtract a pointer by a whole number we use the expression `p + n` when adding or `p - n` when subtracting, **p** being the pointer and **n** being the whole number.
+- The result of this operation will be the address of the pointer **p** with the `n * sizeof(type)` added or subtracted from the pointers address. We do `n * sizeof(type)` because we need to use the value in bytes of the pointers type. 
+- **Analogy:** Its like having a battery powered car or any toy and needing a specific type of battery (AA, AAA, etc) and needing a certain amount, if we have to little batteries or the wrong type, the toy wont work(this is for adding but i think it can be adapted for subtracting also)
+- **Example:** We have a pointer **p** of type int and we want to add to it 2, then we do `*(p+2)` 
+
+### Subtracting two pointers
+
+- To subtract two pointers we need to have two pointers of the same value type(both char, or int, or float, etc).
+- The result is the difference between their memory addresses divided by `sizeof(type)`.
+- **Example:** We have two pointers of type int `int p,q;` and we want to divide them, we will write lets say `int pDifference = p - q;`.
+
+
 ## <ins>Sources used</ins>:
 1. https://www.geeksforgeeks.org/cpp/smart-pointers-cpp/
 2. https://cplusplus.com/doc/tutorial/pointers/
@@ -176,4 +204,4 @@ Example:
 6. https://en.cppreference.com/cpp/language/this
 7. https://learn.microsoft.com/en-us/cpp/cpp/this-pointer?view=msvc-170
 8. https://medium.com/@weidagang/modern-c-nullptr-fa494808d31a
-9. 
+9. https://www.pbinfo.ro/articole/7661/aritmetica-pointerilor
