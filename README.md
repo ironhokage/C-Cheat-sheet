@@ -21,4 +21,6 @@ It isn't something to make you from someone that doesn't know anything about pro
 > [!IMPORTANT]
 > This is still in the early stages of development, do NOT take this as the final table of contents, i will reorganize and redo this as the repo grows
 
-
+1. [Pointers & References](./Pointers/)
+2. [DSA](./DSA/)
+3. [Algorithms](./Algorithms/)

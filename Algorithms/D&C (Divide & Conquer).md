@@ -19,7 +19,157 @@ In D&C there are three types of problems:
 The **"best case"** problem is a special type of sub - problem, that is small enough so we don't need to split it into further sub-problems, its like the easiest problem that has to be solved.
 
 ## Advantages of Divide and Conquer Algorithm:
-- **Solving difficult problems:** 
+- **Speed & Algorithm Efficiency:**
+- **Parallelism:**
+
+## Disadvantages of Divide and Conquer Algorithm:
+- 
+
+## Code Examples:
+
+**Example 1:** 
+
+``` cpp
+#include <iostream>
+#include <cmath> // For sqrt() function
+using namespace std;
+
+/**
+ * Function: ExistsPrimeDivOdd (Original name)
+ *
+ * Purpose: Recursively checks if there is at least ONE prime number 
+ *          in the array segment from index 'st' to 'dt'.
+ * 
+ * Parameters:
+ *   arr[] - the array of integers
+ *   left  - the leftmost index of the current segment (starting at 1)
+ *   right - the rightmost index of the current segment
+ * 
+ * Returns:
+ *   1 (true)  - if a prime number exists in this segment
+ *   0 (false) - if NO prime number exists in this segment
+ */
+int ExistsPrimeDivOdd(int arr[], int left, int right)
+{
+    // ----- BASE CASE: Only ONE element in this segment -----
+    if (left == right)
+    {
+        // Step 1: Numbers less than 2 are NOT prime (0, 1, negative numbers)
+        if (arr[left] < 2) 
+            return 0;
+
+        // Step 2: Check if the number is prime
+        // We only need to check divisors up to sqrt(n) for efficiency
+        for (int divisor = 2; divisor <= sqrt(arr[left]); divisor++)
+        {
+            // If divisible by any number, it's NOT prime
+            if (arr[left] % divisor == 0) 
+                return 0;
+        }
+
+        // If we passed the loop, the number has no divisors -> it IS prime
+        return 1;
+    }
+    // ----- RECURSIVE CASE: More than one element -----
+    else
+    {
+        // Step 3: Split the segment into two halves (Divide & Conquer)
+        int mid = (left + right) / 2;
+
+        // Step 4: Recursively check the LEFT half
+        // Step 5: Recursively check the RIGHT half
+        // Step 6: Combine results using LOGICAL OR (||)
+        // 
+        // Why OR? We only need ONE prime number in the ENTIRE array.
+        // If the left half has a prime -> we don't even need to check the right half
+        // (Short-circuit evaluation saves time!)
+        return ExistsPrimeDivOdd(arr, left, mid) || 
+               ExistsPrimeDivOdd(arr, mid + 1, right);
+    }
+}
+
+int main()
+{
+    int count;          // The number of elements we will read
+    int array[201];     // Array with capacity for 201 elements (indices 1 to 200)
+
+    // Read the number of elements from the user
+    cin >> count;
+
+    // Read the array elements one by one (using 1-based indexing, 
+    // so we start at index 1 and go up to 'count')
+    for (int i = 1; i <= count; i++)
+        cin >> array[i];
+
+    // Call the recursive function on the entire array (from index 1 to count)
+    // If the result is 0 (false), print "NO" (no prime exists)
+    // Otherwise (1/true), print "YES" (at least one prime exists)
+    if (ExistsPrimeDivOdd(array, 1, count) == 0)
+        cout << "NO";
+    else
+        cout << "YES";
+
+    return 0;
+}
+```
+
+**Example 2:**
+
+``` cpp
+#include <iostream>
+using namespace std;
+
+// Function to count odd numbers in an array using divide and conquer (recursion)
+// Parameters:
+//   arr[] - the array of integers
+//   left  - the leftmost index of the current segment
+//   right - the rightmost index of the current segment
+int CountOdd(int arr[], int left, int right)
+{
+    // Base case: only one element in this segment
+    if (left == right)
+    {
+        // Check if the single element is odd
+        if (arr[left] % 2 == 1) 
+            return 1;   // It is odd, count it
+        else 
+            return 0;   // It is even, don't count it
+    }
+    else
+    {
+        // Recursive case: split the array into two halves
+        int mid = (left + right) / 2;
+        
+        // Count odds in the left half
+        int leftResult = CountOdd(arr, left, mid);
+        
+        // Count odds in the right half
+        int rightResult = CountOdd(arr, mid + 1, right);
+        
+        // Return the total sum
+        return leftResult + rightResult;
+    }
+}
+
+int main()
+{
+    int count, elements[1001];
+    
+    // Read the number of elements
+    cin >> count;
+    
+    // Read the array elements (using 1-based indexing, as in the original)
+    for (int i = 1; i <= count; i++)
+        cin >> elements[i];
+    
+    // Call the recursive function and display the result
+    cout << CountOdd(elements, 1, count);
+
+    return 0;
+}
+```
+
 ## <ins>Sources used</ins>:
 - https://www.geeksforgeeks.org/dsa/introduction-to-divide-and-conquer-algorithm/
 - https://www.pbinfo.ro/articole/7651/divide-et-impera
+- https://www.pbinfo.ro/probleme/1149/existaprimedivimp
