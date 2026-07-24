@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pointers/PointerDefinition&Examples.md",
+                "file": "Algorithms/D&C (Divide & Conquer).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PointerDefinition&Examples"
+              "title": "D&C (Divide & Conquer)"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 243.50852584838867
   },
   "right": {
     "id": "5e6faa448b071dd7",
@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 216.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,5 +198,13 @@
     }
   },
   "active": "4cc1d7fde521b628",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Pointers&References/Pointer Definition & Examples.md",
+    "Algorithms/D&C (Divide & Conquer).md",
+    "DSA",
+    "Algorithms/Recursion.md",
+    "Pointers&References/References Definition & Examples.md",
+    "README.md",
+    "Algorithms"
+  ]
 }
